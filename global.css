@@ -40,7 +40,7 @@ body {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 100;
     top: 0;
 
 }
@@ -58,10 +58,22 @@ body {
 .mainLI {
     list-style: none;
     padding: 0 20px;
+    position: relative;
+    transition: all ease-in-out 120ms;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 .mainLI a {
     color: #fff;
     font-size: 20px;
+    padding: 5px;
+
+}
+.mainLI a:hover {
+        animation: jump 500ms ease;
+        color: var(--accent-orange);
+
 }
 .heroSection {
     background: url(./bump-collaboration-colleagues-1068523.jpg);
@@ -109,15 +121,75 @@ body {
 }
 .callToAction {
     color: #fff;
-    /* background-color: var(--accent-orange); */
-    padding: 10px 30px;
+    padding: 10px;
     border-radius: 20px;
+    width: 200px;
     font-size: 2rem;
     transition: all ease-in-out 120ms;
     border: 1px solid #fff;
+    text-align: center;
 }
 .callToAction:hover {
     background-color: var(--accent-orange);
     border-color: var(--accent-orange);
     color: fff;
+}
+/* Up Sell Section */
+#upSell {
+    flex-flow: row wrap;
+    display: flex;
+}
+.upsellBlock {
+    display: flex;
+    flex-flow: row wrap;
+    background: #232f34;
+    width: 80%;
+    margin: 50px auto;
+    padding: 40px;
+    justify-content: center;
+}
+.upsellBlock:nth-child(even) {
+    flex-flow: row-reverse wrap;
+}
+.upSellInformation {
+    width: 50%;
+}
+.upSellInformation h3 {
+    font-size: 4rem;
+    width: 100%;
+    color: var(--accent-orange);
+}
+.upSellInformation p {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+.upsellBlock:nth-child(even) .IconContainer {
+    justify-content: flex-start;
+}
+.IconContainer i {
+    font-size: 10rem;
+    color: var(--accent-orange);
+}
+
+
+
+/* Keyframe animations */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
