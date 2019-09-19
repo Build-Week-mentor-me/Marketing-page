@@ -1,0 +1,123 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+:root {
+    --main-blue: #344955;
+    --accent-orange: #F9AA33;
+    --secondary-blue: #232F34;
+    font-size: 62.5%;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lobster', cursive;
+}
+body {
+     scroll-behavior: smooth;
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+}
+/* Navigation */
+.mainNav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--secondary-blue);
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    top: 0;
+
+}
+.logo {
+    font-size: 4rem;
+    color: var(--accent-orange);
+    letter-spacing: 1.5px;
+    margin-left: 100px;
+}
+.mainUl {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.mainLI {
+    list-style: none;
+    padding: 0 20px;
+}
+.mainLI a {
+    color: #fff;
+    font-size: 20px;
+}
+.heroSection {
+    background: url(./bump-collaboration-colleagues-1068523.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.heroSectionContentContainer {
+    width: 900px;
+    margin-left: 200px;
+    z-index: 10;
+}
+.heroOverlay {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+}
+.heroSection .title {
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.heroSection .text {
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 25px;
+}
+.title span {
+    display: block;
+}
+.callToActionContainer {
+    width: 100%;
+    display: flex; 
+    margin-top: 50px;
+}
+.callToAction {
+    color: #fff;
+    /* background-color: var(--accent-orange); */
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 2rem;
+    transition: all ease-in-out 120ms;
+    border: 1px solid #fff;
+}
+.callToAction:hover {
+    background-color: var(--accent-orange);
+    border-color: var(--accent-orange);
+    color: fff;
+}
