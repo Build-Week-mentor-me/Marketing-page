@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    font-family: 'Lobster', Arial, Helvetica, sans-serif;
+    background: lightblue;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    letter-spacing: 1px;
+}
+
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px;
+}
