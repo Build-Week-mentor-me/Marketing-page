@@ -30,11 +30,15 @@ body {
      width: 100%;
      height: 100%;
 }
+/* Mobile Menu */
+#hamburgerWrapper {
+  display: none;
+}
 /* Navigation */
 .mainNav {
     width: 100%;
     position: fixed;
-    background-color: var(--secondary-blue);
+    background-color: var(--main-blue);
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -49,6 +53,9 @@ body {
     color: var(--accent-orange);
     letter-spacing: 1.5px;
     margin-left: 100px;
+}
+.mobileLogInContainer {
+    display: none;
 }
 .mainUl {
     display: flex;
@@ -70,10 +77,26 @@ body {
     padding: 5px;
 
 }
-.mainLI a:hover {
-        animation: jump 500ms ease;
-        color: var(--accent-orange);
-
+.mainLI:hover {
+    animation: jump 500ms ease;
+    color: #fff;
+}
+.mainLI:hover a {
+    color: var(--accent-orange);
+}
+.mainLI:hover .logIn {
+    color: #fff;
+}
+.mainLI .logIn {
+    color: var(--accent-orange);
+}
+.mainLI i {
+    font-size: 3rem;
+    transition: all ease-in-out 120ms;
+    color: var(--accent-orange);
+}
+.mainLI:hover i {
+    color: #fff;
 }
 .heroSection {
     background: url(./bump-collaboration-colleagues-1068523.jpg);
@@ -100,7 +123,7 @@ body {
     position: absolute;
 }
 .heroSection .title {
-    font-size: 5rem;
+    font-size: calc(2.4rem + 1vw);
     color: #fff;
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -158,6 +181,7 @@ body {
     font-size: 4rem;
     width: 100%;
     color: var(--accent-orange);
+    letter-spacing: 2px;
 }
 .upSellInformation p {
     font-size: 2rem;
@@ -168,17 +192,86 @@ body {
 .IconContainer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     width: 30%;
+    flex-flow: row wrap;
 }
-.upsellBlock:nth-child(even) .IconContainer {
-    justify-content: flex-start;
+.IconContainer .callToActionContainer {
+    justify-content: center;
 }
 .IconContainer i {
     font-size: 10rem;
     color: var(--accent-orange);
 }
 
+/* Footer */
+#mainFooter {
+    background-color: var(--secondary-blue);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px 0;
+}
+.footerLinksMediaBlock {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footerUlContainer {
+    width: 25%;
+}
+.footerUlContainer .logo {
+    margin-left: 0;
+}
+/* .footerUl {
+    margin-left: 100px;
+} */
+li.footerLi:first-child {
+    padding-top: 10px;
+}
+
+li.footerLi {
+    padding-bottom: 10px;
+}
+.footerLi a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+.footerLi a:hover {
+    text-decoration: underline;
+}
+.footerLinksMediaBlock i {
+    font-size: 5rem;
+    color: #F9AA33;
+    margin-left: 20px;
+    transition: all ease-in-out 120ms;
+}
+.footerLinksMediaBlock .githubLink {
+    display: flex;
+    align-items: flex-end;
+}
+.footerLinksMediaBlock i:hover {
+    color: #fff;
+}
+.footerLinksMediaBlock .fa-github-square {
+    margin-left: 0;
+}
+
+.developedByTeam ul li {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.developedByTeam ul li:first-child {
+    padding-top: 5px;
+}
+.developedByTeam ul li span {
+    color: var(--accent-orange);
+    font-size: 1.8rem;
+    font-style: italic;
+}
 
 
 /* Keyframe animations */
@@ -192,4 +285,107 @@ body {
     100% {
         transform: translateY(0);
     }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+
+    /* Main Nav */
+    .mobileLogInContainer {
+        font-size: 2rem;
+        margin-right: 50px;
+        color: #fff;
+    }
+    .mobileLogInContainer a {
+        color: #fff;
+        padding-right: 5px;
+    }
+    .mobileLogInContainer i {
+        display: flex;
+        align-items: center;
+    }
+    .mainUl {
+        display: none;
+    }
+    .logo {
+        margin-left: 50px;
+        text-align: center;
+    }
+    /* HeroSection */
+    .heroSectionContentContainer {
+        width: 900px;
+        z-index: 10;
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: 60px;
+    }
+    .upsellBlock {
+        width: 90%;
+    }
+    .upSellInformation {
+        width: 100%;
+    }
+    .IconContainer {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footerUlContainer .logo {
+        text-align: unset;
+    }
+    .footerLinksMediaBlock {
+        width: 90%;
+    }
+    .footerUlContainer {
+        width: 55%
+    }
+    .socialMediaIcons {
+        width: 40%;
+    }
+    .footerLinksMediaBlock i {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+    .developedByTeam {
+        width: 80%;
+    }
+    .developedByTeam ul li {
+        font-size: 1.2rem;
+    }
+    .developedByTeam ul li span {
+        font-size: 1.4rem;
+    }
+
+    /* Mobile Menu */
+    .mobileLogInContainer {
+        display: flex;
+    }
+
+  #hamburgerWrapper {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    right: 0;
+    width: 100%;
+    z-index: 111;
+    display: flex;
+    background: var(--main-blue);
+  }
+
+  #hamburgerWrapper .iconLinks {
+    color: #fff;
+    font-size: 14px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .iconLinks i {
+    font-size: 20px;
+  }
+  
 }
