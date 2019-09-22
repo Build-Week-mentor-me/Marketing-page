@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+:root {
+    --main-blue: #344955;
+    --accent-orange: #F9AA33;
+    --secondary-blue: #232F34;
+    font-size: 62.5%;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lobster', cursive;
+}
+
+body {
+     scroll-behavior: smooth;
+     background-color: #fff;
+     width: 100%;
+     height: 100%;
+}
+/* Mobile Menu */
+#hamburgerWrapper {
+  display: none;
+}
+/* Navigation */
+.mainNav {
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-blue);
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 0;
+
+}
+.logo {
+    font-size: 4rem;
+    color: var(--accent-orange);
+    letter-spacing: 1.5px;
+    margin-left: 100px;
+}
+.mobileLogInContainer {
+    display: none;
+}
+.mainUl {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.mainLI {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    transition: all ease-in-out 120ms;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.mainLI a {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+
+}
+.mainLI:hover {
+    animation: jump 500ms ease;
+    color: #fff;
+}
+.mainLI:hover a {
+    color: var(--accent-orange);
+}
+.mainLI:hover .logIn {
+    color: #fff;
+}
+.mainLI .logIn {
+    color: var(--accent-orange);
+}
+.mainLI i {
+    font-size: 3rem;
+    transition: all ease-in-out 120ms;
+    color: var(--accent-orange);
+}
+.mainLI:hover i {
+    color: #fff;
+}
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 190px auto 100px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    letter-spacing: 1px;
+    font-size: 6rem;
+}
+
+.content p{
+    font-size: 2rem;
+}
+
+.form{
+    width: 100%;
+    margin: 25px 0;
+}
+
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.form input[type="text"],
+.form textarea{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F9AA33;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.5s ease;
+    font-size: 1.4rem;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-color:var(--accent-orange);
+    box-shadow: inset 0 1px 1px .5px var(--accent-orange);
+}
+
+.form .label{
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+.top-form .inner-form{
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea{
+    height: 120px;
+}
+
+.btn{
+    background: var(--accent-orange);
+    width: 200px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+/* Footer */
+#mainFooter {
+    background-color: var(--secondary-blue);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px 0;
+}
+.footerLinksMediaBlock {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footerUlContainer {
+    width: 25%;
+}
+.footerUlContainer .logo {
+    margin-left: 0;
+}
+li.footerLi:first-child {
+    padding-top: 10px;
+}
+
+li.footerLi {
+    padding-bottom: 10px;
+}
+.footerLi a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+.footerLi a:hover {
+    text-decoration: underline;
+}
+.footerLinksMediaBlock i {
+    font-size: 5rem;
+    color: #F9AA33;
+    margin-left: 20px;
+    transition: all ease-in-out 120ms;
+}
+.footerLinksMediaBlock .githubLink {
+    display: flex;
+    align-items: flex-end;
+}
+.footerLinksMediaBlock i:hover {
+    color: #fff;
+}
+.footerLinksMediaBlock .fa-github-square {
+    margin-left: 0;
+}
+
+.developedByTeam ul li {
+    color: #fff;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.developedByTeam ul li:first-child {
+    padding-top: 5px;
+}
+.developedByTeam ul li span {
+    color: var(--accent-orange);
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+
+    /* Main Nav */
+    .mobileLogInContainer {
+        font-size: 2rem;
+        margin-right: 50px;
+        color: #fff;
+    }
+    .mobileLogInContainer a {
+        color: #fff;
+        padding-right: 5px;
+    }
+    .mobileLogInContainer i {
+        display: flex;
+        align-items: center;
+    }
+    .mainUl {
+        display: none;
+    }
+    .logo {
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footerUlContainer .logo {
+        text-align: unset;
+    }
+    .footerLinksMediaBlock {
+        width: 90%;
+    }
+    .footerUlContainer {
+        width: 55%
+    }
+    .socialMediaIcons {
+        width: 40%;
+    }
+    .footerLinksMediaBlock i {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+    .developedByTeam {
+        width: 80%;
+    }
+    .developedByTeam ul li {
+        font-size: 1.2rem;
+    }
+    .developedByTeam ul li span {
+        font-size: 1.4rem;
+    }
+
+    /* Mobile Menu */
+    .mobileLogInContainer {
+        display: flex;
+    }

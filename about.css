@@ -37,7 +37,7 @@ body {
 /* Navigation */
 .mainNav {
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     background-color: var(--main-blue);
     padding: 20px;
     display: flex;
@@ -98,94 +98,58 @@ body {
 .mainLI:hover i {
     color: #fff;
 }
-.wrapper{
-    width: 100%;
-    max-width: 680px;
-    margin: 190px auto 100px auto;
-    padding: 20px;
-    box-sizing: border-box;
+
+section{
+    background-image: url(spacey1.jpg);
+    height: 600px;
 }
 
-.content {
-    text-align: center;
+.title{
+font-size: 3rem;
+margin: 0 auto;
+text-align: center;
+padding-top: 10%;
+color: #F9AA33;
 }
 
-.content h1{
-    letter-spacing: 1px;
-    font-size: 6rem;
-}
-
-.content p{
-    font-size: 2rem;
-}
-
-.form{
-    width: 100%;
-    margin: 25px 0;
-}
-
-.top-form,
-.middle-form,
-.bottom-form{
-    width: 100%;
-    min-height: 65px;
-    margin: 10px 0;
-    overflow: hidden;
-}
-
-.form input[type="text"],
-.form textarea{
-    padding: 15px 5px;
-    box-sizing: border-box;
-    width: 100%;
-    border: 2px solid #F9AA33;
-    border-radius: 2px;
-    outline: none;
-    transition: all 0.5s ease;
+.about-container{
+    display: flex;
+    margin: 1% 5% 1% 5%;
     font-size: 1.4rem;
+    margin-bottom: 5%;
+    margin-top: 3%;
 }
 
-.form input:focus,
-.form textarea:focus{
-    border-color:var(--accent-orange);
-    box-shadow: inset 0 1px 1px .5px var(--accent-orange);
+/* .about-img {
+    display: block;
+    width: 600px;
+    height: 200px;
+    margin: 0 auto;
+} */
+
+.about-us-text{
+    margin: .5%;
+    padding: 1%;
+    background-color: lightgray;
+    width: 90%;
+}
+.mission{
+    margin: .5%;
+    padding: 1%;
+    background-color: lightgray;
+}
+.why-us{
+    margin: .5%;
+    padding: 1%;
+    background-color: lightgray;
+    width:90%;
 }
 
-.form .label{
-    margin: 5px;
-    font-size: 1.25rem;
+.about-container div p {
+    width: 90%;
 }
 
-.top-form .inner-form{
-    width: 29.9%;
-    float: left;
-    margin-right: 5%;
-}
 
-.top-form .inner-form:last-child{
-    margin-right: 0;
-}
-
-.middle-form {
-    clear: both;
-}
-
-.bottom-form textarea{
-    height: 120px;
-}
-
-.btn{
-    background: var(--accent-orange);
-    width: 200px;
-    padding: 10px 0px;
-    border-radius: 2px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: 5px;
-    cursor: pointer;
-    font-size: 1.8rem;
-}
 
 /* Footer */
 #mainFooter {
@@ -207,9 +171,6 @@ body {
 .footerUlContainer .logo {
     margin-left: 0;
 }
-/* .footerUl {
-    margin-left: 100px;
-} */
 li.footerLi:first-child {
     padding-top: 10px;
 }
@@ -318,6 +279,10 @@ li.footerLi {
     }
     .developedByTeam ul li span {
         font-size: 1.4rem;
+    }
+
+    #mainFooter {
+        position: absolute;
     }
 
     /* Mobile Menu */
