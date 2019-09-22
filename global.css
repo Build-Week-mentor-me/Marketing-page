@@ -1,13 +1,16 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Lobster|Montserrat&display=swap');
+
 :root {
     --main-blue: #344955;
     --accent-orange: #F9AA33;
     --secondary-blue: #232F34;
     font-size: 62.5%;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 * {
     text-decoration: none;
     padding: 0;
@@ -98,6 +101,7 @@ body {
 .mainLI:hover i {
     color: #fff;
 }
+/* End of Nazv */
 .heroSection {
     background: url(./bump-collaboration-colleagues-1068523.jpg);
     background-attachment: fixed;
@@ -165,11 +169,11 @@ body {
 .upsellBlock {
     display: flex;
     flex-flow: row wrap;
-    background: #232f34;
+    /* background: #232f34; */
     width: 80%;
     margin: 50px auto;
-    padding: 40px;
-    justify-content: center;
+    padding: 40px 0;
+    justify-content: space-between;
 }
 .upsellBlock:nth-child(even) {
     flex-flow: row-reverse wrap;
@@ -180,12 +184,12 @@ body {
 .upSellInformation h3 {
     font-size: 4rem;
     width: 100%;
-    color: var(--accent-orange);
+    color: var(--secondary-blue);
     letter-spacing: 2px;
 }
 .upSellInformation p {
     font-size: 2rem;
-    color: #fff;
+    color: var(--secondary-blue);
     letter-spacing: 1px;
     line-height: 35px;
 }
@@ -198,6 +202,14 @@ body {
 }
 .IconContainer .callToActionContainer {
     justify-content: center;
+}
+.IconContainer .callToAction {
+    border: 1px solid #000;
+    color: #000;
+}
+.IconContainer .callToAction:hover {
+    color: #fff;
+    border-color: #F9AA33;
 }
 .IconContainer i {
     font-size: 10rem;
@@ -313,17 +325,30 @@ li.footerLi {
     }
     /* HeroSection */
     .heroSectionContentContainer {
-        width: 900px;
         z-index: 10;
         display: flex;
         flex-flow: row wrap;
-        margin-left: 60px;
+        width: 80%;
+        margin: 0 auto;
     }
     .upsellBlock {
-        width: 90%;
+        width: 100%;
+        flex-flow: row-reverse wrap;
+        margin: 0;
     }
     .upSellInformation {
+        width: 90%;
+        flex-flow: row-reverse wrap;
+        margin: 0;
+    }
+    .upsellBlocck .upSellInformation,
+    .upsellBlock .IconContainer img {
+        width: 90%;
+    }
+    .upsellBlock:nth-child(even) {
+        margin: 0;
         width: 100%;
+        background-color: #d6d6d6;
     }
     .IconContainer {
         margin-top: 50px;
@@ -388,4 +413,8 @@ li.footerLi {
     font-size: 20px;
   }
   
+}
+
+.IconContainer img {
+    width: 100%;
 }
