@@ -100,15 +100,18 @@ body {
 }
 
 section{
-    background-image: url(spacey1.jpg);
-    height: 600px;
+    background-image: url(lementorimg.jpg);
+    background-position-y: -200px;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .title{
-font-size: 3rem;
+font-size: 8rem;
 margin: 0 auto;
 text-align: center;
-padding-top: 10%;
+padding-top: 5%;
 color: #F9AA33;
 }
 
@@ -117,31 +120,29 @@ color: #F9AA33;
     margin: 1% 5% 1% 5%;
     font-size: 1.4rem;
     margin-bottom: 5%;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 
-/* .about-img {
-    display: block;
-    width: 600px;
-    height: 200px;
-    margin: 0 auto;
-} */
+.about-container h2{
+    padding: 20px;
+    font-size: 2rem;
+}
 
 .about-us-text{
     margin: .5%;
     padding: 1%;
-    background-color: lightgray;
+    background-color: rgba(95, 95, 95, 0.589);
     width: 90%;
 }
 .mission{
     margin: .5%;
     padding: 1%;
-    background-color: lightgray;
+    background-color: rgba(95, 95, 95, 0.589);
 }
 .why-us{
     margin: .5%;
     padding: 1%;
-    background-color: lightgray;
+    background-color: rgba(95, 95, 95, 0.589);
     width:90%;
 }
 
