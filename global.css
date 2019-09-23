@@ -116,9 +116,9 @@ body {
     margin-top: 50px;
 }
 .heroSectionContentContainer {
-    width: 900px;
-    margin-left: 200px;
+    width: 65%;
     z-index: 10;
+    margin: 0 auto;
 }
 .heroOverlay {
     width: 100%;
@@ -129,8 +129,10 @@ body {
 .heroSection .title {
     font-size: calc(2.4rem + 1vw);
     color: #fff;
-    margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 .heroSection .text {
     font-size: 2rem;
@@ -170,7 +172,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     /* background: #232f34; */
-    width: 80%;
+    width: 65%;
     margin: 50px auto;
     padding: 40px 0;
     justify-content: space-between;
@@ -182,10 +184,12 @@ body {
     width: 50%;
 }
 .upSellInformation h3 {
-    font-size: 4rem;
+    font-size: 5.5rem;
     width: 100%;
     color: var(--secondary-blue);
     letter-spacing: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 .upSellInformation p {
     font-size: 2rem;
@@ -225,7 +229,7 @@ body {
 }
 .footerLinksMediaBlock {
     display: flex;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -285,6 +289,112 @@ li.footerLi {
     font-style: italic;
 }
 
+/* Pricing Page */
+section#welcomeContent {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#welcomeContent .IconContainer {    
+    width: 45%;
+}
+#welcomeContent .upsellBlock {
+    width: 65%;
+    align-items: center;
+}
+section#welcomeContent .callToActionContainer {
+    display: none;
+}
+#pricingblocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 50px 20px 50px 20px;
+}
+#pricingblocks h3 {
+    width: 65%;
+    font-size: 7rem;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.trippleBlockContainer {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 auto;
+}
+.firstBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 30%;
+    min-width: 400px;
+    padding: 20px 0;
+}
+.firstBlock h6 {
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    padding-bottom: 10px;
+}
+.firstBlock p {
+    width: 100%;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+.firstBlock ul {
+    width: 100%;
+}
+.firstBlock li {
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    list-style: disc;
+    margin-left: 10px;
+}
+/* Contact section */
+.title {
+    font-size: 7rem;
+    width: 65%;
+    margin: 70px auto;
+    padding-top: 20px;
+}
+.contactUs {
+    width: 65%;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+}
+.contactUs h6 {
+    font-size: 3rem;
+    padding-top: 20px;
+}
+.contactUs p {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.contactUs .callToAction {
+    color: #000;
+    border-color: #000;
+    margin-bottom: 50px;
+}
+.contactUs .callToAction:hover {
+    color: #fff;
+    border-color: var(--accent-orange)
+}
+#home #contactContent {
+    background-color: #e6e6e6;
+}
+#home .reachOut {
+    width: 100%;
+    margin: 0 auto;
+}
 
 /* Keyframe animations */
 @keyframes jump {
@@ -413,6 +523,46 @@ li.footerLi {
     font-size: 20px;
   }
   
+  /* Pricing Page */
+  section#welcomeContent {
+    height: 70vh;
+  }
+  #welcomeContent .upsellBlock {
+      width: 100%;
+  }
+  #welcomeContent .IconContainer {
+      width: 100%;
+  }
+  #welcomeContent .upSellInformation h3 {
+      font-size: 4rem;
+  }
+  #pricingblocks h3 {
+      font-size: 4rem;
+      width: 90%;
+  }
+  .trippleBlockContainer {
+      width: 90%;
+  }
+  .firstBlock h6 {
+      font-size: 2.5rem;
+  }
+  .firstBlock p {
+      font-size: 1.8rem;
+  }
+  /* Contact section */
+  .reachOut {
+      width: 80%;
+      margin: 0 auto;
+  }
+  .title {
+    margin-top: 0;
+    padding: 50px 0 30px 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .contactUs {
+      width: 100%;
+  }
 }
 
 .IconContainer img {
