@@ -37,7 +37,7 @@ body {
 /* Navigation */
 .mainNav {
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     background-color: var(--main-blue);
     padding: 20px;
     display: flex;
@@ -98,58 +98,94 @@ body {
 .mainLI:hover i {
     color: #fff;
 }
-
-section{
-     background-image: url(mentorimgx2.jpg);
-    height: 650px;
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
-
-.title{
-font-size: 8rem;
-margin: 0 auto;
-text-align: center;
-padding-top: 5%;
-color: #F9AA33;
-}
-
-.about-container{
-    display: flex;
-    margin: 1% 5% 1% 5%;
-    font-size: 1.4rem;
-    margin-bottom: 5%;
-    margin-top: 7%;
-}
-
-.about-container h2{
+.wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 190px auto 100px auto;
     padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1{
+    letter-spacing: 1px;
+    font-size: 6rem;
+}
+
+.content p{
     font-size: 2rem;
 }
 
-.about-us-text{
-    margin: .5%;
-    padding: 1%;
-    background-color: rgba(95, 95, 95, 0.315);
-    width: 90%;
-}
-.mission{
-    margin: .5%;
-    padding: 1%;
-    background-color: rgba(95, 95, 95, 0.589);
-}
-.why-us{
-    margin: .5%;
-    padding: 1%;
-    background-color: rgba(95, 95, 95, 0.589);
-    width:90%;
+.form{
+    width: 100%;
+    margin: 25px 0;
 }
 
-.about-container div p {
-    width: 90%;
+.top-form,
+.middle-form,
+.bottom-form{
+    width: 100%;
+    min-height: 65px;
+    margin: 10px 0;
+    overflow: hidden;
 }
 
+.form input[type="text"],
+.form textarea{
+    padding: 15px 5px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #F9AA33;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.5s ease;
+    font-size: 1.4rem;
+}
 
+.form input:focus,
+.form textarea:focus{
+    border-color:var(--accent-orange);
+    box-shadow: inset 0 1px 1px .5px var(--accent-orange);
+}
+
+.form .label{
+    margin: 5px;
+    font-size: 1.25rem;
+}
+
+.top-form .inner-form{
+    width: 29.9%;
+    float: left;
+    margin-right: 5%;
+}
+
+.top-form .inner-form:last-child{
+    margin-right: 0;
+}
+
+.middle-form {
+    clear: both;
+}
+
+.bottom-form textarea{
+    height: 120px;
+}
+
+.btn{
+    background: var(--accent-orange);
+    width: 200px;
+    padding: 10px 0px;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
 
 /* Footer */
 #mainFooter {
@@ -253,18 +289,6 @@ li.footerLi {
         margin-left: 50px;
         text-align: center;
     }
-/* Section Media stuffs */
-    section{
-        background-image: url(design-learn-pattern-247819.jpg);
-    }
-
-    .about-container{
-        display: flex;
-        flex-direction: column;
-        margin: 1%, 2%, 1%, 2%;
-        margin-bottom: 3%;
-        margin-top: 5%;
-    }
 
     /* Footer */
     .footerUlContainer .logo {
@@ -291,10 +315,6 @@ li.footerLi {
     }
     .developedByTeam ul li span {
         font-size: 1.4rem;
-    }
-
-    #mainFooter {
-        position: absolute;
     }
 
     /* Mobile Menu */
