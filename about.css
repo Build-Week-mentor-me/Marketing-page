@@ -100,10 +100,10 @@ body {
 }
 
 section{
-     background-image: url(mentorimgx2.jpg);
+    background-image: url(mentorimgx2.jpg);
     height: 650px;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 .title{
@@ -130,19 +130,20 @@ color: #F9AA33;
 .about-us-text{
     margin: .5%;
     padding: 1%;
-    background-color: rgba(95, 95, 95, 0.315);
+    background-color: rgba(95, 95, 95, 0.589);
     width: 90%;
 }
 .mission{
     margin: .5%;
     padding: 1%;
     background-color: rgba(95, 95, 95, 0.589);
+    width:
 }
 .why-us{
     margin: .5%;
     padding: 1%;
     background-color: rgba(95, 95, 95, 0.589);
-    width:90%;
+    width: 90%;
 }
 
 .about-container div p {
@@ -255,7 +256,9 @@ li.footerLi {
     }
 /* Section Media stuffs */
     section{
-        background-image: url(design-learn-pattern-247819.jpg);
+        height: 100%;
+        width: auto;
+        background-image: url(mentorimgx2.jpg);
     }
 
     .about-container{
@@ -264,6 +267,22 @@ li.footerLi {
         margin: 1%, 2%, 1%, 2%;
         margin-bottom: 3%;
         margin-top: 5%;
+    }
+
+    .about-us-text{
+        width: 100%;
+        color: orange;
+    }
+
+    .about-us-text h2
+
+    .mission{
+        width: 100%;
+    }
+
+    .why-us{
+        width: 100%;
+        margin-bottom: 50px;
     }
 
     /* Footer */

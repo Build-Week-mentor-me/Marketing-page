@@ -34,7 +34,7 @@ body {
 #hamburgerWrapper {
   display: none;
 }
-/* Navigation */
+/* Navigation */  
 .mainNav {
     width: 100%;
     position: fixed;
@@ -321,3 +321,4 @@ li.footerLi {
     .mobileLogInContainer {
         display: flex;
     }
+}
