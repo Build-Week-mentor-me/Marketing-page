@@ -230,6 +230,11 @@ li.footerLi {
     }
 }
 
+
+
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 800px) {
 
@@ -331,4 +336,19 @@ li.footerLi {
     /* Mobile Menu */
     .mobileLogInContainer {
         display: flex;
+    }
+    /* Mobile Menu */
+    #hamburgerWrapper {
+    display: none;
+  }
+}
+
+
+
+    /* Tablet media query*/
+
+    @media only screen and (min-width: 1100px) {
+        .mission{
+            width:90%;
+        }
     }
