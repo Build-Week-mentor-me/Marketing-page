@@ -255,34 +255,49 @@ li.footerLi {
         text-align: center;
     }
 /* Section Media stuffs */
-    section{
-        height: 100%;
+    section {
         width: auto;
-        background-image: url(mentorimgx2.jpg);
-    }
+        background-image: url(adult-brainstorming-caucasian-1437908.jpg);
+        object-fit: contain;
+        background-position-x: 64%;
+        height: unset;
+    }   
 
-    .about-container{
+    .about-container {
         display: flex;
         flex-direction: column;
         margin: 1%, 2%, 1%, 2%;
-        margin-bottom: 3%;
         margin-top: 5%;
+        margin-bottom: unset;
     }
 
-    .about-us-text{
+    .about-us-text {
         width: 100%;
-        color: orange;
+        color: white;
+        font-size: 1.5rem;
+        padding-left: 10px;
     }
 
-    .about-us-text h2
+    .about-container h2 {
+        color: #F9AA33;
+        font-size: 3rem;
+    }
 
-    .mission{
+    .mission {
         width: 100%;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        padding-left: 10px;
     }
 
-    .why-us{
+    .why-us {
         width: 100%;
         margin-bottom: 50px;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        padding-left: 10px;
     }
 
     /* Footer */
@@ -312,9 +327,6 @@ li.footerLi {
         font-size: 1.4rem;
     }
 
-    #mainFooter {
-        position: absolute;
-    }
 
     /* Mobile Menu */
     .mobileLogInContainer {
