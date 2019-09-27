@@ -196,6 +196,7 @@ body {
     color: var(--secondary-blue);
     letter-spacing: 1px;
     line-height: 35px;
+    padding-right: 30px;
 }
 .IconContainer {
     display: flex;
@@ -239,6 +240,8 @@ body {
 }
 .footerUlContainer .logo {
     margin-left: 0;
+    font-size: 3rem;
+    text-align: left;
 }
 /* .footerUl {
     margin-left: 100px;
@@ -303,6 +306,7 @@ section#welcomeContent {
 #welcomeContent .upsellBlock {
     width: 65%;
     align-items: center;
+    margin: 0 auto;
 }
 section#welcomeContent .callToActionContainer {
     display: none;
@@ -335,7 +339,7 @@ section#welcomeContent .callToActionContainer {
     justify-content: center;
     flex-flow: row wrap;
     width: 30%;
-    min-width: 400px;
+    min-width: 300px;
     padding: 20px 0;
 }
 .firstBlock h6 {
@@ -408,10 +412,78 @@ section#welcomeContent .callToActionContainer {
         transform: translateY(0);
     }
 }
+@media only screen and (max-width: 1100px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .mainUl {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .upsellBlock {
+        width: 100%;
+        flex-flow: row-reverse wrap;
+        margin: 0;
+    }
+    #welcomeContent .upSellInformation {
+        width: 100%;
+    }
+    #welcomeContainer .upsellBlock .IconContainer img {
+        width: 100%;
+    }
+    .upSellInformation {
+        width: 90%;
+        flex-flow: row-reverse wrap;
+        margin: 0;
+    }
+    #welcomeContent .IconContainer {    
+        width: 100%;
+    }
+    .upsellBlocck .upSellInformation,
+    .upsellBlock .IconContainer img {
+        width: 50%;
+    }
+    .upsellBlock:nth-child(even) {
+        margin: 0;
+        width: 100%;
+        background-color: #d6d6d6;
+    }
+    .IconContainer {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .reachOut {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+    .title {
+      margin-top: 0;
+      padding: 50px 0 30px 0;
+      margin-bottom: 0;
+      width: 80%;
+      margin: 0;
+    }
+    .contactUs {
+        width: 80%;
+        margin: 0;
+    }
+    .footerLinksMediaBlock {
+        width: 80%;
+    }
+    section#welcomeContent {
+        height: 80vh;
+    }
 
+}
 /* Media Queries */
 @media only screen and (max-width: 800px) {
 
+    #mainFooter {
+        margin-bottom: 50px;
+    }
     /* Main Nav */
     .mobileLogInContainer {
         font-size: 2rem;
@@ -432,6 +504,7 @@ section#welcomeContent .callToActionContainer {
     .logo {
         margin-left: 50px;
         text-align: center;
+        width: unset;
     }
     /* HeroSection */
     .heroSectionContentContainer {
@@ -454,6 +527,9 @@ section#welcomeContent .callToActionContainer {
     .upsellBlocck .upSellInformation,
     .upsellBlock .IconContainer img {
         width: 90%;
+    }
+    #welcomeContent .upsellBlock .IconContainer img {
+        width: 50%;
     }
     .upsellBlock:nth-child(even) {
         margin: 0;
@@ -562,6 +638,9 @@ section#welcomeContent .callToActionContainer {
   }
   .contactUs {
       width: 100%;
+  }
+  #welcomeContent .upSellInformation {
+      width: 90%;
   }
 }
 
