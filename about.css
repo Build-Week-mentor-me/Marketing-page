@@ -100,10 +100,10 @@ body {
 }
 
 section{
-     background-image: url(mentorimgx2.jpg);
+    background-image: url(mentorimgx2.jpg);
     height: 650px;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 .title{
@@ -130,19 +130,20 @@ color: #F9AA33;
 .about-us-text{
     margin: .5%;
     padding: 1%;
-    background-color: rgba(95, 95, 95, 0.315);
+    background-color: rgba(95, 95, 95, 0.589);
     width: 90%;
 }
 .mission{
     margin: .5%;
     padding: 1%;
     background-color: rgba(95, 95, 95, 0.589);
+    width:
 }
 .why-us{
     margin: .5%;
     padding: 1%;
     background-color: rgba(95, 95, 95, 0.589);
-    width:90%;
+    width: 90%;
 }
 
 .about-container div p {
@@ -229,6 +230,11 @@ li.footerLi {
     }
 }
 
+
+
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 800px) {
 
@@ -254,16 +260,49 @@ li.footerLi {
         text-align: center;
     }
 /* Section Media stuffs */
-    section{
-        background-image: url(design-learn-pattern-247819.jpg);
-    }
+    section {
+        width: auto;
+        background-image: url(adult-brainstorming-caucasian-1437908.jpg);
+        object-fit: contain;
+        background-position-x: 64%;
+        height: unset;
+    }   
 
-    .about-container{
+    .about-container {
         display: flex;
         flex-direction: column;
         margin: 1%, 2%, 1%, 2%;
-        margin-bottom: 3%;
         margin-top: 5%;
+        margin-bottom: unset;
+    }
+
+    .about-us-text {
+        width: 100%;
+        color: white;
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .about-container h2 {
+        color: #F9AA33;
+        font-size: 3rem;
+    }
+
+    .mission {
+        width: 100%;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    .why-us {
+        width: 100%;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+        padding-left: 10px;
     }
 
     /* Footer */
@@ -293,11 +332,35 @@ li.footerLi {
         font-size: 1.4rem;
     }
 
-    #mainFooter {
-        position: absolute;
-    }
 
     /* Mobile Menu */
     .mobileLogInContainer {
         display: flex;
+    }
+    /* Mobile Menu */
+    #hamburgerWrapper {
+    display: none;
+  }
+}
+
+
+
+    /* Tablet media query*/
+
+    @media only screen and (min-width: 801px) {
+
+        .about-container h2 {
+            color: #F9AA33;
+        }
+        .about-us-text{
+            color: white;
+        }
+        .mission{
+            max-width: 33%;
+            color: white;
+            line-height: 144%;
+        }
+        .why-us {
+            color: white;
+        }
     }
